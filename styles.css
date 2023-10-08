@@ -1,83 +1,49 @@
-/* Reset some default styles */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
 }
 
-header {
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make text readable */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 50px;
-    margin-right: 10px;
-}
-
-.logo h1 {
-    font-size: 24px;
+h1 {
+    text-align: center;
     color: #333;
+    padding: 20px 0;
 }
 
-.search-bar {
-    display: flex;
+#video-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
-input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+#video-player {
+    width: 100%;
+    max-height: 500px;
+    outline: none;
 }
 
-button {
-    background-color: #ff5722;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin-left: 5px;
-    cursor: pointer;
+#video-playlist {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.video-links {
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for the video links section */
-    color: #fff;
-    padding: 20px;
-    max-width: 200px; /* Adjust the width as needed */
-}
-
-.video-links h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.video-links ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-.video-links li {
-    margin-bottom: 10px;
+li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.video-links a {
+a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
     font-weight: bold;
 }
 
-/* Rest of your CSS styles remain the same as before */
+a:hover {
+    color: #ff5722;
+}

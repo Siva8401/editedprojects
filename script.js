@@ -1,9 +1,12 @@
 const videoPlayer = document.getElementById('video-player');
-const rotationInput = document.getElementById('rotation');
-const rotationValue = document.getElementById('rotation-value');
+const rotateButton = document.getElementById('rotate-button');
+let isRotated = false;
 
-rotationInput.addEventListener('input', function () {
-    const rotationDegree = this.value;
-    videoPlayer.style.transform = `rotate(${rotationDegree}deg)`;
-    rotationValue.innerText = `${rotationDegree} degrees`;
+rotateButton.addEventListener('click', function () {
+    if (isRotated) {
+        videoPlayer.style.transform = 'rotate(0deg)';
+    } else {
+        videoPlayer.style.transform = 'rotate(90deg)';
+    }
+    isRotated = !isRotated;
 });

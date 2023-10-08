@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Video Showcase</title>
+    <title>Creative Video Showcase</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="logo">
             <img src="logo.png" alt="Your Logo">
@@ -18,33 +17,38 @@
         </div>
     </header>
 
-    <!-- Background Image -->
-    <div class="background-image"></div>
-
-    <!-- Video Container -->
-    <div class="video-container">
-        <h1>Welcome to Our Video Showcase</h1>
-        <video id="video-player" controls>
-            <source src="video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div id="rotation-controls">
-            <label for="rotation">Rotate Video:</label>
-            <input type="range" id="rotation" min="0" max="360" step="1" value="0">
-            <span id="rotation-value">0 degrees</span>
+    <main>
+        <div class="video-container">
+            <div class="video-player">
+                <video id="video-player" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="custom-controls">
+                    <button id="play-pause-button">Play/Pause</button>
+                    <button id="rotate-button">Rotate</button>
+                </div>
+            </div>
+            <div class="video-details">
+                <h1>Video Title</h1>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
         </div>
-    </div>
 
-    <!-- Video Playlist -->
-    <div id="video-playlist">
-        <h2>Video Playlist</h2>
-        <ul>
-            <li><a href="video1.mp4">Video 1</a></li>
-            <li><a href="video2.mp4">Video 2</a></li>
-            <li><a href="video3.mp4">Video 3</a></li>
-        </ul>
-    </div>
-<button id="rotate-button">Rotate</button>
+        <div class="video-playlist">
+            <h2>Video Playlist</h2>
+            <ul>
+                <li><a href="video1.mp4">Video 1</a></li>
+                <li><a href="video2.mp4">Video 2</a></li>
+                <li><a href="video3.mp4">Video 3</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Creative Video Showcase</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -6,11 +6,20 @@ body, h1, h2, p, ul, li {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.background {
+    background-image: url('background-image.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Adjust the blur strength as needed */
+    height: 100vh;
+    overflow: hidden;
 }
 
 header {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make text readable */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,110 +27,66 @@ header {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-    width: 150px;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.menu ul {
-    list-style: none;
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.search-bar {
     display: flex;
 }
 
-.menu li {
-    margin-right: 20px;
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
-main {
+.video-links {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for the video links section */
+    color: #fff;
     padding: 20px;
+    max-width: 200px; /* Adjust the width as needed */
 }
 
-.video-category {
-    background-color: #fff;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.video-category h1 {
-    font-size: 24px;
+.video-links h2 {
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-.video-thumbnail {
-    position: relative;
+.video-links ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.video-thumbnail img {
-    width: 100%;
-    max-height: 300px;
+.video-links li {
+    margin-bottom: 10px;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.video-thumbnail:hover .overlay {
-    opacity: 1;
-}
-
-.play-button {
-    width: 60px;
-    height: 60px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-}
-
-.tags {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.tag {
-    background-color: #ff5722;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
-
-.social-sharing {
-    margin-top: 10px;
-}
-
-.social-link {
+.video-links a {
     text-decoration: none;
     color: #fff;
-    margin-right: 10px;
+    font-weight: bold;
 }
+
+/* Rest of your CSS styles remain the same as before */

@@ -3,53 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Showcase</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Video Player</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Your Logo">
-            <h1>Your Name</h1>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
-        </div>
-    </header>
+    <h1>Video Player</h1>
 
-    <aside class="video-links">
-        <h2>Video Links</h2>
-        <ul>
-            <li><a href="video1.mp4">Video 1</a></li>
-            <li><a href="video2.mp4">Video 2</a></li>
-            <li><a href="video3.mp4">Video 3</a></li>
-        </ul>
-    </aside>
+    <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-    <main>
-        <section class="video-showcase">
-            <h2>Featured Videos</h2>
-            <div class="video">
-                <video controls>
-                    <source src="video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h3>Video 1 Title</h3>
-                <p>Description for Video 1 goes here.</p>
-            </div>
-            <div class="video">
-                <video controls>
-                    <source src="video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h3>Video 2 Title</h3>
-                <p>Description for Video 2 goes here.</p>
-            </div>
-            <!-- Add more video entries as needed -->
-        </section>
-    </main>
+    <video controls>
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-    <script src="script.js"></script>
+    <!-- Add more <video> elements with different video sources as needed -->
 </body>
 </html>

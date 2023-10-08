@@ -1,54 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Video Showcase</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Your Logo">
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
-        </div>
-    </header>
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
 
-    <main>
-        <div class="video-container">
-            <div class="video-player">
-                <video id="video-player" controls>
-                    <source src="video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="custom-controls">
-                    <button id="play-pause-button">Play/Pause</button>
-                    <button id="rotate-button">Rotate</button>
-                </div>
-            </div>
-            <div class="video-details">
-                <h1>Video Title</h1>
-                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
 
-        <div class="video-playlist">
-            <h2>Video Playlist</h2>
-            <ul>
-                <li><a href="video1.mp4">Video 1</a></li>
-                <li><a href="video2.mp4">Video 2</a></li>
-                <li><a href="video3.mp4">Video 3</a></li>
-            </ul>
-        </div>
-    </main>
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    <footer>
-        <p>&copy; 2023 Creative Video Showcase</p>
-    </footer>
+.logo img {
+    width: 150px;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.search-bar {
+    display: flex;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-player {
+    position: relative;
+}
+
+video {
+    width: 100%;
+    max-height: 500px;
+    outline: none;
+}
+
+.custom-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.video-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-details h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.video-playlist {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-playlist h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.video-playlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.video-playlist li {
+    margin-bottom: 10px;
+}
+
+.video-playlist a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

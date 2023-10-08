@@ -18,10 +18,23 @@
     <div id="video-playlist">
         <h2>Video Playlist</h2>
         <ul>
-            <li><a href="video1.mp4">Video 1</a></li>
-            <li><a href="video2.mp4">Video 2</a></li>
-            <li><a href="video3.mp4">Video 3</a></li>
+            <li><a href="video1.mp4">LATEST EDIT</a></li>
+            <li><a href="video2.mp4">TRAIN EDIT</a></li>
+            <li><a href="video3.mp4">OLD VIDEO</a></li>
         </ul>
     </div>
+ <script>
+        // Get references to the video player and rotation input
+        const videoPlayer = document.getElementById('video-player');
+        const rotationInput = document.getElementById('rotation');
+        const rotationValue = document.getElementById('rotation-value');
+
+        // Add event listener to the rotation input
+        rotationInput.addEventListener('input', function () {
+            const rotationDegree = this.value;
+            videoPlayer.style.transform = `rotate(${rotationDegree}deg)`;
+            rotationValue.innerText = `${rotationDegree} degrees`;
+        });
+    </script>
 </body>
 </html>

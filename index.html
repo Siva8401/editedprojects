@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Video Editing Showcase</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Video Showcase</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Our Video Showcase</h1>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Your Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- Background Image -->
+    <div class="background-image"></div>
 
     <!-- Video Container -->
-    <div id="video-container">
+    <div class="video-container">
+        <h1>Welcome to Our Video Showcase</h1>
         <video id="video-player" controls>
             <source src="video1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <div id="rotation-controls">
+            <label for="rotation">Rotate Video:</label>
+            <input type="range" id="rotation" min="0" max="360" step="1" value="0">
+            <span id="rotation-value">0 degrees</span>
+        </div>
     </div>
 
     <!-- Video Playlist -->
@@ -24,5 +44,7 @@
             <li><a href="video3.mp4">Video 3</a></li>
         </ul>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

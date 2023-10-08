@@ -3,74 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Editing Samples</title>
+    <title>Video Showcase</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Your Logo">
-        </div>
-        <nav class="menu">
+    <div class="background">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Siva's Edits">
+                <h1>Your Name</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </header>
+
+        <aside class="video-links">
+            <h2>Video Links</h2>
             <ul>
-                <li><a href="#category1">Category 1</a></li>
-                <li><a href="#category2">Category 2</a></li>
-                <li><a href="#category3">Category 3</a></li>
+                <li><a href="#">Video 1</a></li>
+                <li><a href="#">Video 2</a></li>
+                <li><a href="#">Video 3</a></li>
             </ul>
-        </nav>
-    </header>
+        </aside>
 
-    <main>
-        <section id="category1" class="video-category">
-            <h1>Category 1</h1>
-            <div class="video-thumbnail">
-                <img src="video1-thumbnail.jpg" alt="Video 1 Thumbnail">
-                <div class="overlay">
-                    <a href="video1.mp4" class="play-button"></a>
-                    <div class="tags">
-                        <span class="tag">Tag 1</span>
-                        <span class="tag">Tag 2</span>
-                    </div>
+        <main>
+            <section class="video-showcase">
+                <h2>Featured Videos</h2>
+                <div class="video">
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Video 1 Title</h3>
+                    <p>Description for Video 1 goes here.</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="category2" class="video-category">
-            <h1>Category 2</h1>
-            <div class="video-thumbnail">
-                <img src="video2-thumbnail.jpg" alt="Video 2 Thumbnail">
-                <div class="overlay">
-                    <a href="video2.mp4" class="play-button"></a>
-                    <div class="tags">
-                        <span class="tag">Tag 3</span>
-                        <span class="tag">Tag 4</span>
-                    </div>
+                <div class="video">
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Video 2 Title</h3>
+                    <p>Description for Video 2 goes here.</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="category3" class="video-category">
-            <h1>Category 3</h1>
-            <div class="video-thumbnail">
-                <img src="video3-thumbnail.jpg" alt="Video 3 Thumbnail">
-                <div class="overlay">
-                    <a href="video3.mp4" class="play-button"></a>
-                    <div class="tags">
-                        <span class="tag">Tag 5</span>
-                        <span class="tag">Tag 6</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="social-sharing">
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Twitter</a>
-            <a href="#" class="social-link">Instagram</a>
-        </div>
-    </footer>
+                <!-- Add more video entries as needed -->
+            </section>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>

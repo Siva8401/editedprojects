@@ -1,7 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, p {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f2f2f2;
 }
 
@@ -38,62 +42,78 @@ button {
     cursor: pointer;
 }
 
-.background-image {
-    background-image: url('background.jpg');
-    background-size: cover;
-    height: 300px;
+.main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .video-container {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 20px;
+.video-player {
+    position: relative;
 }
 
-#video-player {
+video {
     width: 100%;
     max-height: 500px;
     outline: none;
 }
 
-#rotation-controls {
+.custom-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.video-details {
+    text-align: center;
     margin-top: 20px;
 }
 
-ul {
+.video-details h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.video-playlist {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-playlist h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.video-playlist ul {
     list-style-type: none;
     padding: 0;
 }
 
-li {
-    display: inline-block;
-    margin-right: 20px;
+.video-playlist li {
+    margin-bottom: 10px;
 }
 
-a {
+.video-playlist a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
-a:hover {
-    color: #ff5722;
-}
-
-#rotate-button {
-    background-color: #ff5722;
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
     color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin-top: 10px;
-    cursor: pointer;
 }

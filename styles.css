@@ -10,7 +10,7 @@ body {
 }
 
 .background {
-    background-image: url('background-image.jpg'); /* Replace with your background image URL */
+    background-image: url("img.jpg"); /* Replace with your background image URL */
     background-size: cover;
     background-position: center;
     filter: blur(8px); /* Adjust the blur strength as needed */

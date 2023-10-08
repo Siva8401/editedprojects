@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Video Showcase</title>
+    <title>Video Editing Samples</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,42 +11,65 @@
         <div class="logo">
             <img src="logo.png" alt="Your Logo">
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
-        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#category1">Category 1</a></li>
+                <li><a href="#category2">Category 2</a></li>
+                <li><a href="#category3">Category 3</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="video-container">
-            <div class="video-player">
-                <video id="video-player" controls>
-                    <source src="video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="custom-controls">
-                    <button id="play-pause-button">Play/Pause</button>
-                    <button id="rotate-button">Rotate</button>
+        <section id="category1" class="video-category">
+            <h1>Category 1</h1>
+            <div class="video-thumbnail">
+                <img src="video1-thumbnail.jpg" alt="Video 1 Thumbnail">
+                <div class="overlay">
+                    <a href="video1.mp4" class="play-button"></a>
+                    <div class="tags">
+                        <span class="tag">Tag 1</span>
+                        <span class="tag">Tag 2</span>
+                    </div>
                 </div>
             </div>
-            <div class="video-details">
-                <h1>Video Title</h1>
-                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
+        </section>
 
-        <div class="video-playlist">
-            <h2>Video Playlist</h2>
-            <ul>
-                <li><a href="video1.mp4">Video 1</a></li>
-                <li><a href="video2.mp4">Video 2</a></li>
-                <li><a href="video3.mp4">Video 3</a></li>
-            </ul>
-        </div>
+        <section id="category2" class="video-category">
+            <h1>Category 2</h1>
+            <div class="video-thumbnail">
+                <img src="video2-thumbnail.jpg" alt="Video 2 Thumbnail">
+                <div class="overlay">
+                    <a href="video2.mp4" class="play-button"></a>
+                    <div class="tags">
+                        <span class="tag">Tag 3</span>
+                        <span class="tag">Tag 4</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="category3" class="video-category">
+            <h1>Category 3</h1>
+            <div class="video-thumbnail">
+                <img src="video3-thumbnail.jpg" alt="Video 3 Thumbnail">
+                <div class="overlay">
+                    <a href="video3.mp4" class="play-button"></a>
+                    <div class="tags">
+                        <span class="tag">Tag 5</span>
+                        <span class="tag">Tag 6</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Creative Video Showcase</p>
+        <div class="social-sharing">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
